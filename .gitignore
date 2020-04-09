@@ -1,2 +1,2 @@
 .terraform
-./*/terraform_backend.tf
+terraform_backend.tf
