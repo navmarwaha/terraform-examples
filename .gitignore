@@ -1,3 +1,2 @@
 .terraform
-vars.tf
 terraform_backend.tf
