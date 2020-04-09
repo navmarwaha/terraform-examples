@@ -1,6 +1,6 @@
 resource "aws_security_group" "only_ssh" {
   vpc_id = "${aws_vpc.prod-vpc.id}"
-  name = "Only SSH"
+  name   = "Only SSH"
 
   ingress {
     from_port   = 22

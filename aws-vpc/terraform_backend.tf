@@ -1,9 +1,9 @@
 terraform {
- backend "s3" {
- encrypt = true
- bucket = "<your-s3-bucket>"
- dynamodb_table = "<your-dynamodb-table>"
- region = "ap-south-1"
- key = "<s3-bucket-subdir>/<keyname>"
- }
+  backend "s3" {
+    encrypt        = true
+    bucket         = "devops-mumbai"
+    dynamodb_table = "tf-state-lock"
+    region         = "ap-south-1"
+    key            = "terraform-state/prod-vpc"
+  }
 }

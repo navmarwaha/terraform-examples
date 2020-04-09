@@ -4,7 +4,7 @@ variable "aws_region" {
 
 variable "vpc_cidr" {
   description = "The CIDR Block for the VPC"
-  default = "172.16.0.0/19"
+  default     = "172.16.0.0/19"
 }
 
 variable "vpc_name_tag" {

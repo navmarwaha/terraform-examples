@@ -39,22 +39,22 @@ resource "aws_route_table" "prod-private-rt-2" {
 }
 
 resource "aws_route_table_association" "prod-pub-1" {
-  subnet_id = "${aws_subnet.public-subnet-1.id}"
+  subnet_id      = "${aws_subnet.public-subnet-1.id}"
   route_table_id = "${aws_route_table.prod-public-rt.id}"
 }
 
 
 resource "aws_route_table_association" "prod-pub-2" {
-  subnet_id = "${aws_subnet.public-subnet-2.id}"
+  subnet_id      = "${aws_subnet.public-subnet-2.id}"
   route_table_id = "${aws_route_table.prod-public-rt.id}"
 }
 
 resource "aws_route_table_association" "prod-pvt-1" {
-  subnet_id = "${aws_subnet.private-subnet-1.id}"
+  subnet_id      = "${aws_subnet.private-subnet-1.id}"
   route_table_id = "${aws_route_table.prod-private-rt-1.id}"
 }
 
 resource "aws_route_table_association" "prod-pvt-2" {
-  subnet_id = "${aws_subnet.private-subnet-2.id}"
+  subnet_id      = "${aws_subnet.private-subnet-2.id}"
   route_table_id = "${aws_route_table.prod-private-rt-2.id}"
 }

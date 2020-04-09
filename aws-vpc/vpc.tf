@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_vpc" "prod-vpc" {
-  cidr_block       = "${var.vpc_cidr}"
-  enable_dns_hostnames = "true"
+  cidr_block                       = "${var.vpc_cidr}"
+  enable_dns_hostnames             = "true"
   assign_generated_ipv6_cidr_block = "true"
 
   tags = {
